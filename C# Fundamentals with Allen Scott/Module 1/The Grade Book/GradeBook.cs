@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace The_Grade_Book
 {
-    class Program
+    class GradeBook
     {
-        static void Main(string[] args)
+        List<float> grades = new List<float>();
+
+        public void AddGrade(float grade)
         {
-            GradeBook book = new GradeBook();
-            book.AddGrade(91);
-            book.AddGrade(89.5f);
+            grades.Add(grade);
         }
     }
 }
