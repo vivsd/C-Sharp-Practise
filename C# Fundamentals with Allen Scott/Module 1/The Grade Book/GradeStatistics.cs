@@ -8,9 +8,15 @@ namespace The_Grade_Book
 {
     class GradeStatistics
     {
-        public float AverageGrade;
-        public float HighestGrade;
-        public float LowestGrade;
+        public GradeStatistics()
+        {
+            AverageGrade = 0;
+            LowestGrade = float.MaxValue;
+            HighestGrade = 0;
 
+        }
+           public float AverageGrade;
+           public float HighestGrade;
+           public float LowestGrade ;
     }
 }
