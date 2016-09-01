@@ -14,12 +14,27 @@ namespace The_Grade_Book
                 grades = new List<float>();
         }
 
+        public GradeStatistics CompuStatistics()
+        {
+            GradeStatistics stats = new GradeStatistics();
+
+            float sum = 0;
+
+            foreach (float grade in grades)
+            {
+                sum += grade;
+            }
+
+            stats.AverageGrade = sum/grades.Count;
+            return stats;
+        }
+
         public void AddGrade(float grade)
         {
             grades.Add(grade);
         }
 
-        List<float> grades;
+        private List<float> grades;
 
     }
 }
