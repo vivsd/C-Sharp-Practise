@@ -23,7 +23,7 @@ namespace Are_you_sleepy_enough
             }
             else
             {
-                Console.WriteLine("You need more sleep");
+                Console.WriteLine("You need more sleep...");
             }
         }
     }
